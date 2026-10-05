@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressPercent = document.getElementById('progressPercent');
     const addHabitBtn = document.getElementById('addHabitBtn');
 
-    // Function to calculate completed habits and update progress bar
+   
     function updateProgress() {
         const habits = habitList.querySelectorAll('.habit');
         const totalHabits = habits.length;
@@ -23,20 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const percentage = totalHabits > 0 ? Math.round((completedHabits / totalHabits) * 100) : 0;
 
-        // Update DOM elements
+       
         progressFill.style.width = `${percentage}%`;
         progressStats.textContent = `${completedHabits} of ${totalHabits} habits completed`;
         progressPercent.textContent = `${percentage}%`;
     }
 
-    // Attach click events to current checkboxes
+   
     habitList.addEventListener('change', (event) => {
         if (event.target.matches('input[type="checkbox"]')) {
             updateProgress();
         }
     });
 
-    // Handle "+ Add New Habit" button prompt
+    
     addHabitBtn.addEventListener('click', () => {
         const habitName = prompt("Enter new habit title:");
         if (habitName && habitName.trim() !== "") {
