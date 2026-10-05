@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(4, 4, 49,0.9);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3.5vh;
+    list-style-type: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+}
+.logo .logo-text{
+    
+    color:bisque;
+    font-size: 2.55rem;
+}
+.logo .logo-icon{
+    color: yellow;   
+}
+.logo{
+    text-decoration: none;
+    margin: 2vh;
+}
+.nav-links a:hover{
+    color:aqua;
+}
+.box2{
+    width: 100%;
+    height: 15.625rem;
+    background-color: rgb(4, 4, 63);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.box2 .header{
+    font-size: 3.6rem;
+    font-weight: bolder;
+}
+.box2 .paragraph{
+    font-size: 1.4rem;
+    color: rgb(147, 132, 132);
+}
+.box2 .button button{
+    background-color:bisque;
+    height: 2.5rem;
+    width: 10.5rem;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+}
+.habits-section {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 70px 20px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin-bottom: 8px;
+    color: #171746;
+}
+
+.section-heading p {
+    color: #777;
+    font-size: 17px;
+}
+
+.habit-list {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.habit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.habit:last-child {
+    border-bottom: none;
+}
+
+.habit-info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.habit-icon {
+    font-size: 25px;
+}
+
+.habit h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #222;
+}
+
+.habit p {
+    margin: 0;
+    color: #888;
+    font-size: 14px;
+}
+
+.habit input {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #171746;
+}
+
+.habit.completed h3 {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.progress {
+    margin-top: 30px;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+.progress-bar {
+    height: 9px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 25%;
+    height: 100%;
+    background: #171746;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .box {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        margin: 1vh;
+    }
+
+    .logo .logo-text {
+        font-size: 1.8rem;
+    }
+
+    .nav-links {
+        margin: 1vh;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .box2 {
+        height: auto;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .box2 .header {
+        font-size: 2rem;
+    }
+
+    .box2 .paragraph {
+        font-size: 1rem;
+    }
+
+    .habits-section {
+        padding: 30px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .habit {
+        padding: 15px;
+    }
+
+    .habit h3 {
+        font-size: 16px;
+    }
+}
+
+

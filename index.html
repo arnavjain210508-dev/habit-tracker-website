@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <div class="box">
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6.19351 11.3965L12.192 3.31186C12.6611 2.67957 13.5405 3.07311 13.5405 3.91536V10.1729C13.5405 10.6775 13.8853 11.0865 14.3107 11.0865H17.2283C17.891 11.0865 18.2443 12.0134 17.8065 12.6035L11.808 20.6881C11.3389 21.3204 10.4595 20.9269 10.4595 20.0846V13.8271C10.4595 13.3225 10.1147 12.9135 9.68931 12.9135H6.77173C6.10895 12.9135 5.75566 11.9866 6.19351 11.3965Z"></path>
+                    </svg>
+                </span>
+                <span class="logo-text">HabitTracker</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Dashboard</a></li>
+               
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Banner -->
+    <div class="box2">
+        <span class="header">Build Better Habits, One Day at a Time</span>
+        <span class="paragraph">Track your daily routines, stay consistent, and reach your goals through small continuous improvements.</span>
+        <span class="button"><button id="addHabitBtn">+ Add New Habit</button></span>
+    </div>
+
+    <!-- Main Habits Section -->
+    <section class="habits-section">
+
+        <div class="section-heading">
+            <h2>Today's Habits</h2>
+            <p>Monday, October 5, 2026</p>
+        </div>
+
+        <div class="habit-list" id="habitList">
+
+            <div class="habit">
+                <div class="habit-info">
+                    <span class="habit-icon">💧</span>
+                    <div>
+                        <h3>Drink 8 glasses of water</h3>
+                        <p>0 of 8 glasses</p>
+                    </div>
+                </div>
+                <input type="checkbox">
+            </div>
+
+            <div class="habit">
+                <div class="habit-info">
+                    <span class="habit-icon">📚</span>
+                    <div>
+                        <h3>Read for 30 minutes</h3>
+                        <p>Daily</p>
+                    </div>
+                </div>
+                <input type="checkbox">
+            </div>
+
+            <div class="habit">
+                <div class="habit-info">
+                    <span class="habit-icon">🏃</span>
+                    <div>
+                        <h3>Exercise</h3>
+                        <p>Daily</p>
+                    </div>
+                </div>
+                <input type="checkbox">
+            </div>
+
+            <div class="habit completed">
+                <div class="habit-info">
+                    <span class="habit-icon">🧘</span>
+                    <div>
+                        <h3>Meditate</h3>
+                        <p>Daily</p>
+                    </div>
+                </div>
+                <input type="checkbox" checked>
+            </div>
+
+        </div>
+
+        <!-- Dynamic Progress Bar Section -->
+        <div class="progress">
+            <div class="progress-text">
+                <span id="progressStats">1 of 4 habits completed</span>
+                <span id="progressPercent">25%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 25%;"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- JavaScript File Linked at the bottom -->
+    <script src="script.js"></script>
+</body>
+</html>
