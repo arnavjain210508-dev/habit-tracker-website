@@ -57,6 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Initial calculation on page load
+   
     updateProgress();
 });
