@@ -60,3 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
    
     updateProgress();
 });
+const currentDate = document.getElementById("current-date");
+
+const today = new Date();
+
+currentDate.textContent = today.toLocaleDateString("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    year: "numeric"
+});
